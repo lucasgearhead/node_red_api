@@ -1,0 +1,47 @@
+# Arquivos de compilação Python
+*.pyc
+__pycache__/
+
+# Diretório virtualenv
+venv/
+
+# Arquivos de ambiente
+.env
+
+# Arquivos de log
+*.log
+
+# Arquivos de banco de dados SQLite
+*.sqlite3
+
+# Arquivos de mídia
+media/
+
+# Arquivos estáticos compilados
+staticfiles/
+
+# Arquivos de configuração locais
+local_settings.py
+
+# Arquivos de cache
+.cacheddata
+
+# Arquivos de backup do editor
+*~
+
+# Arquivos de configuração
+*.swp
+*.swo
+*.ini
+*.env
+
+# Dependências Python
+/.vscode/
+/.idea/
+/.mypy_cache/
+/.pytest_cache/
+/.coverage
+/.cache/
+*.egg-info/
+dist/
+build/

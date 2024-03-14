@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Último Dado</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+      }
+      .container {
+        width: 30vw;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      h1 {
+        color: #333;
+        text-align: center;
+      }
+      .dados {
+        margin-left: 20px;
+      }
+      .dados p {
+        margin-left: 0;
+        display: flex;
+        align-items: center;
+      }
+      .bolinha {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        margin-right: 10px;
+      }
+      .verde {
+        background-color: green;
+      }
+      .vermelha {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Último Dado</h1>
+      <div class="dados">
+        <p>
+          <span
+            class="bolinha {% if ultimo_dado.sensor %}verde{% else %}vermelha{% endif %}"
+          ></span
+          ><strong>Sensor: </strong> {{ ultimo_dado.sensor }}
+        </p>
+        <p>
+          <span
+            class="bolinha {% if ultimo_dado.botao %}verde{% else %}vermelha{% endif %}"
+          ></span
+          ><strong>Botão: </strong> {{ ultimo_dado.botao }}
+        </p>
+        <p>
+          <span
+            class="bolinha {% if ultimo_dado.liga_robo %}verde{% else %}vermelha{% endif %}"
+          ></span
+          ><strong>Liga Robô: </strong> {{ ultimo_dado.liga_robo }}
+        </p>
+        <p>
+          <span
+            class="bolinha {% if ultimo_dado.reset_contador %}verde{% else %}vermelha{% endif %}"
+          ></span
+          ><strong>Reset Contador: </strong> {{ ultimo_dado.reset_contador }}
+        </p>
+        <p>
+          <strong>Valor da Contagem:</strong> {{ ultimo_dado.valor_contagem }}
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
