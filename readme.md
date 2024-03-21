@@ -13,7 +13,7 @@ Este é um projeto simples em Django que demonstra como exibir o último dado de
 1. Clone o repositório para o seu ambiente local:
 
 ```
-git clone [https://github.com/seu_usuario/seu_projeto.git](https://github.com/lucasgearhead/node_red_api.git)
+git clone https://github.com/lucasgearhead/node_red_api.git
 ```
 
 2. Navegue até o diretório do projeto:
